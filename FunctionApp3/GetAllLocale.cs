@@ -12,7 +12,7 @@ namespace FunctionApp3
         [FunctionName("GetAll")]
         public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)]HttpRequestMessage req, TraceWriter log)
         {
-            log.Info("Calling Local GetAll Trigger");
+            log.Info("Calling Locale GetAll Trigger");
 
             var list = Locale.GenerateData();
 

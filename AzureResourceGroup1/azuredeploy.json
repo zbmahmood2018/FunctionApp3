@@ -21,6 +21,13 @@
         "description": "Storage Account type"
       }
     },
+    "dbAccountName": {
+      "type": "string",
+      "defaultValue": "zbm-functionapp-git-3-db",
+      "metadata": {
+        "description": "Document DB instance name."
+      }
+    },
     "repoURL": {
       "type": "string",
       "defaultValue": "https://github.com/zbmahmood2018/FunctionApp3.git",
@@ -43,6 +50,27 @@
     "storageAccountid": "[concat(resourceGroup().id,'/providers/','Microsoft.Storage/storageAccounts/', variables('storageAccountName'))]"
   },
   "resources": [
+    {
+      "type": "Microsoft.DocumentDB/databaseAccounts",
+      "kind": "GlobalDocumentDB",
+      "name": "[parameters('dbAccountName')]",
+      "apiVersion": "2015-04-08",
+      "location": "Australia East",
+      "tags": {
+        "defaultExperience": "DocumentDB"
+      },
+      "scale": null,
+      "properties": {
+        "databaseAccountOfferType": "Standard",
+        "consistencyPolicy": {
+          "defaultConsistencyLevel": "Session",
+          "maxIntervalInSeconds": 5,
+          "maxStalenessPrefix": 100
+        },
+        "name": "[parameters('dbAccountName')]"
+      },
+      "dependsOn": []
+    },
     {
       "type": "Microsoft.Storage/storageAccounts",
       "name": "[variables('storageAccountName')]",
