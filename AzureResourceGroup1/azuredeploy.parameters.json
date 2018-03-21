@@ -1,0 +1,12 @@
+{
+  "$schema": "http://schemas.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "appName": {
+      "value": "zbm-functionapp-git3"
+    },
+    "repoURL": {
+      "value": "https://github.com/zbmahmood2018/FunctionApp3.git"
+    }
+  }
+}
