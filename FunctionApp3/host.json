@@ -1,22 +1,2 @@
-{
-  "applicationInsights": {
-    "sampling": {
-      "isEnabled": true,
-      "maxTelemetryItemsPerSecond": 5
-    }
-  },
-  "functionTimeout": "00:01:00",  // Time-out after 1 minute
-  "healthMonitor": {
-    "enabled": true,
-    "healthCheckInterval": "00:00:10",
-    "healthCheckWindow": "00:02:00",
-    "healthCheckThreshold": 6,
-    "counterThreshold": 0.80
-  },
-  "http": {
-    "routePrefix": "api",
-    "maxOutstandingRequests": -1, // Allow Maximun requests to be proccess
-    "maxConcurrentRequests": -1, // Allow Maximun concurrent requests to be proccess
-    "dynamicThrottlesEnabled": false
-  }
+{ 
 }
