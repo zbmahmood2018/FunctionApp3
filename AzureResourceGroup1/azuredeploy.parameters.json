@@ -7,6 +7,12 @@
     },
     "repoURL": {
       "value": "https://github.com/zbmahmood2018/FunctionApp3.git"
+    },
+    "cosmoDbEndPoint": {
+      "value": "https://localization-zbm-test.documents.azure.com:443/"
+    },
+    "cosmoDbAuthKey": {
+      "value": "j9Lp4uyodyBT4CZE7oRnd4XQi3n7RF2SchSNPOwBYrEyOAGDxDNmOnHv9DRSVC7j7nHRyVOgqUCCVrhRJnsXXQ=="
     }
   }
 }
