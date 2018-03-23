@@ -11,7 +11,7 @@ namespace FunctionApp3
         {
             return new List<Locale>
             {
-                new Locale {Id="1", Country="Australia"},
+                new Locale {Id="1", Country="Australia Test"},
                 new Locale {Id="2", Country="United Kingdom"},
                 new Locale {Id="3", Country="Germany"}
             };
